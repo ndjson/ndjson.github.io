@@ -21,48 +21,35 @@
           <h1><span class="prefix">nd</span>json <span class="subtitle">Newline Delimited JSON</span></h1>
         </header>
 
-<!-- <nav><ul>
-<li>Home</li>
-<li><a href="/examples/">Examples</a></li>
-<li><a href="/on_the_web/">On the web</a></li>
-<li><a href="http://json.org/">json.org</a></li>
-</ul></nav> -->
+        <nav><ul>
+          <li>Home</li>
+          <li><a href="http://dataprotocols.org/ndjson/">Spec</a></li>
+          <li><a href="libraries.html">Libraries</a></li>
+        </ul></nav>
 
         <hr>
-<p class="alert">
-  <strong>Incomplete!</strong> This page includes a rough description of the work-in-progress NDJSON specification. The 
-  current draft can be found in the <a href="https://github.com/ndjson/ndjson-spec">repository on GitHub</a>.
-</p>
 
         <section id="main_content">
 <p>This page describes the ndjson format, also called Newline delimited JSON.
-NDJSON is a convenient format for storing 
+NDJSON is a convenient format for storing or streaming
 structured data that may be processed one record at a time. It works well with unix-style
 text processing tools and shell pipelines. It's a great format for log files.
 It's also a flexible format for passing messages between cooperating processes.</p>
 
-
-
 <h3>
-<a name="utf-8-encoding" class="anchor" href="#utf-8-encoding"><span class="octicon octicon-link"></span></a>1. UTF-8 Encoding</h3>
-
-<p>JSON allows encoding Unicode strings with only ASCII escape sequences,
-however those escapes will be hard to read when viewed in a text editor.</p>
-
-<h3>
-<a name="each-line-is-a-valid-json-value" class="anchor" href="#each-line-is-a-valid-json-value"><span class="octicon octicon-link"></span></a>2. Each Line is a Valid JSON Value</h3>
-
-<p>The most common values will be objects or arrays, but any JSON value is permitted.</p>
-<p>See <a href="http://json.org/">json.org</a> for more information about JSON values.</p>
-
-<h3>
-<a name="line-separator-is-n" class="anchor" href="#line-separator-is-n"><span class="octicon octicon-link"></span></a>3. Line Separator is <code>'\n'</code>
+<a name="line-separator-is-n" class="anchor" href="#line-separator-is-n"><span class="octicon octicon-link"></span></a>
+1. Line Separator is <code>'\n'</code>
 </h3>
 
 <p>This means <code>'\r\n'</code> is also supported because trailing white space is ignored when parsing JSON values.</p>
 
-
 <h3>
+<a name="each-line-is-a-valid-json-value" class="anchor" href="#each-line-is-a-valid-json-value"><span class="octicon octicon-link"></span></a>
+2. Each Line is a Valid JSON Value
+</h3>
+
+<p>The most common values will be objects or arrays, but any JSON value is permitted. See <a href="http://json.org/">json.org</a> for more information about JSON values.</p>
+
 </section>
         <footer>
 
